@@ -8,26 +8,51 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+body {
+  color: rgb(var(--foreground-rgb));
+  font-family: 'poppins', sans-serif;
+}
+
+/* for the a link onClick tick */
+
+.menu-effect {
+  left: -0.75rem;
+  top: 0.125rem;
+  z-index: -10;
+  width: 2rem;
+  border-radius: 0.5rem;
+  background-color: #1c93e2;
+  transition-duration: .5s;
+  position: absolute;
+}
+
+/* scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* webkit scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* portfolio details*/
+.overlay {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(255,255, 255, 0.9), rgba(255,255, 255, 0.6));
+  backdrop-filter: blur(4px);
+}
+
+@media (max-width: 640px) {
+  .mySlider {
+    width: 100% !important;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media screen and (max-width: 900px) {
+  .ground-color-change {
+    background-color: linear-gradient(90deg, rgba(238, 247, 251, 1), 55%, rgba(255,255, 255, 1) 55%);
   }
 }
