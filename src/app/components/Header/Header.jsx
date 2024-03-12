@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import DiagonalDrawer from "./DiagonalDrawer";
 
 const Header = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -21,30 +20,27 @@ const Header = () => {
     };
   }, []);
 
-  const OpenDrawer = () => {
-    setIsOpen(true)
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleMenuItemClick = (index) => {
+    setSelectedIndex(index);
+    setIsOpen(false);
   };
 
   return (
     <React.Fragment>
-      <div>
-        <DiagonalDrawer
-        isOpen={isOpen}
-        setIsOpen={setIsOpen}
-        selectedIndex={selectedIndex}
-        setSelectedIndex={setSelectedIndex}
-        />
-      </div>
       <header
         className={`${
           isScrolled ? "headerShow" : ""
-        } fixed top-0 transition-all z-50 duration-500`}
+        }  invisible md:visible w-full fixed top-0 transition-all z-50 duration-500`}
         style={{
           backgroundColor: isScrolled ? "#fff" : "transparent",
           boxShadow: isScrolled ? "#48afde -10px 25px 50px 10px" : "",
         }}
       >
-        <nav className="invisible md:visible xl:max-w-4xl 2xl:max-w-7xl m-auto">
+        <nav className="xl:max-w-4xl 2xl:max-w-7xl m-auto">
           <ul className="flex flex-row items-center h-24">
             <li className=" group text-2xl relative font-bold mr-20">
               {selectedIndex === 0 ? (
@@ -112,6 +108,67 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+      </header>
+
+      <header
+        className={`${
+          isScrolled ? "headerShow" : ""
+        } w-full fixed top-0 transition-all z-50 duration-500 h-[75px]`}
+        style={{
+          backgroundColor: isScrolled ? "#fff" : "transparent",
+          boxShadow: isScrolled ? "#48afde -10px 25px 40px 10px" : "",
+        }}
+      >
+        <div className="relative md:hidden">
+          <div
+            className="z-30 absolute cursor-pointer m-5 flex justify-center items-center"
+            onClick={toggleMenu}
+          >
+            <div className="relative w-7 md:hidden h-7 flex justify-center items-center">
+              {isOpen ? (
+                <h1 className=" text-6xl  text-white">x</h1>
+              ) : (
+                <>
+                  <div className="flex flex-col">
+                    <span className="h-1 w-10 m-1 bg-black"></span>
+                    <span className="h-1 w-10 m-1 bg-black"></span>
+                    <span className="h-1 w-10 m-1 bg-black"></span>
+                  </div>
+                </>
+              )}
+            </div>
+          </div>
+        </div>
+        {isOpen && (
+          <nav
+            className={`md:hidden absolute top-0 pt-[200px] left-0 right-0 bg-opacity-95 w-full h-screen transition-all bg-[#223740] ${
+              isOpen ? "translate-y-0" : "-translate-y-full"
+            }`}
+          >
+            <ul className="flex flex-col items-center text-[#fff]">
+              <li className="text-4xl font-bold mb-6 hover:text-gray-400">
+                <Link href="/" onClick={() => handleMenuItemClick(0)}>
+                  Home
+                </Link>
+              </li>
+              <li className="text-4xl font-bold mb-6 hover:text-gray-400">
+                <Link href="/portfolio" onClick={() => handleMenuItemClick(1)}>
+                  Portfolio
+                </Link>
+              </li>
+              <li className="text-4xl font-bold mb-6 hover:text-gray-400">
+                <Link href="/contact" onClick={() => handleMenuItemClick(2)}>
+                  About
+                </Link>
+              </li>
+              <li className="text-4xl font-bold mb-6 hover:text-gray-400">
+                <Link href="/hire-me" onClick={() => handleMenuItemClick(3)}>
+                  Hire Me
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        )}
       </header>
     </React.Fragment>
   );
