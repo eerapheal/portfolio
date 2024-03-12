@@ -167,6 +167,40 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
+            
+            <div className="flex gap-5 justify-center mt-8">
+              <Link href="https://github.com/eerapheal" target="_blank">
+                <img
+                  src="/GitHub-Logo.png"
+                  alt="GitHub"
+                  className="w-10 h-10 rounded-2xl"
+                />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/ekpenisiraphael/"
+                target="_blank"
+              >
+                <img
+                  src="/linkedin-icon.jpeg"
+                  alt="LinkedIn"
+                  className="w-10 h-10 rounded-2xl"
+                />
+              </Link>
+              <Link href="https://medium.com/@ekpenisiraphael" target="_blank">
+                <img
+                  src="/medium.jpg"
+                  alt="Medium"
+                  className="w-10 h-10 rounded-2xl"
+                />
+              </Link>
+              <Link href="https://twitter.com/ekpenisiraphael" target="_blank">
+                <img
+                  src="/twitter-icon.jpeg"
+                  alt="Twitter"
+                  className="w-10 h-10 rounded-3xl"
+                />
+              </Link>
+            </div>
           </nav>
         )}
       </header>
