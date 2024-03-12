@@ -81,13 +81,13 @@ const Header = () => {
                 <span className="menu-effect transform opacity-100 rotate-12 group-hover:rotate-12  group-hover:opacity-100"></span>
               )}
               <Link
-                href="/about"
+                href="/contact"
                 className={`menu-item ${
                   selectedIndex === 0 ? "text-black" : ""
                 } text-[#666d47] group-hover:text-gray-800`}
                 onClick={() => setSelectedIndex(2)}
               >
-                About
+                contact
               </Link>
             </li>
             <li className=" group text-2xl relative font-bold mr-20">
@@ -97,13 +97,13 @@ const Header = () => {
                 <span className="menu-effect transform opacity-100 rotate-12 group-hover:rotate-12  group-hover:opacity-100"></span>
               )}
               <Link
-                href="/hire"
+                href="/about"
                 className={`menu-item ${
                   selectedIndex === 0 ? "text-black" : ""
                 } text-[#666d47] group-hover:text-gray-800`}
                 onClick={() => setSelectedIndex(3)}
               >
-                Hire Me
+                About
               </Link>
             </li>
           </ul>
@@ -157,13 +157,13 @@ const Header = () => {
                 </Link>
               </li>
               <li className="text-4xl font-bold mb-6 hover:text-gray-400">
-                <Link href="/about" onClick={() => handleMenuItemClick(2)}>
-                  About
+                <Link href="/contact" onClick={() => handleMenuItemClick(2)}>
+                  Contact
                 </Link>
               </li>
               <li className="text-4xl font-bold mb-6 hover:text-gray-400">
-                <Link href="/hire" onClick={() => handleMenuItemClick(3)}>
-                  Hire Me
+                <Link href="/about" onClick={() => handleMenuItemClick(3)}>
+                  About
                 </Link>
               </li>
             </ul>
