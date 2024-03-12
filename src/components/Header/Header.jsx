@@ -81,13 +81,13 @@ const Header = () => {
                 <span className="menu-effect transform opacity-100 rotate-12 group-hover:rotate-12  group-hover:opacity-100"></span>
               )}
               <Link
-                href="/contact"
+                href="/about"
                 className={`menu-item ${
                   selectedIndex === 0 ? "text-black" : ""
                 } text-[#666d47] group-hover:text-gray-800`}
                 onClick={() => setSelectedIndex(2)}
               >
-                Contact
+                About
               </Link>
             </li>
             <li className=" group text-2xl relative font-bold mr-20">
@@ -97,7 +97,7 @@ const Header = () => {
                 <span className="menu-effect transform opacity-100 rotate-12 group-hover:rotate-12  group-hover:opacity-100"></span>
               )}
               <Link
-                href="/hire-me"
+                href="/hire"
                 className={`menu-item ${
                   selectedIndex === 0 ? "text-black" : ""
                 } text-[#666d47] group-hover:text-gray-800`}
@@ -113,18 +113,18 @@ const Header = () => {
       <header
         className={`${
           isScrolled ? "headerShow" : ""
-        } w-full fixed top-0 transition-all z-50 duration-500 h-[75px]`}
+        } w-full fixed top-0 md:invisible transition-all z-50 duration-500 h-[75px]`}
         style={{
           backgroundColor: isScrolled ? "#fff" : "transparent",
           boxShadow: isScrolled ? "#48afde -10px 25px 40px 10px" : "",
         }}
       >
-        <div className="relative md:hidden">
+        <div className="relative">
           <div
             className="z-30 absolute cursor-pointer m-5 flex justify-center items-center"
             onClick={toggleMenu}
           >
-            <div className="relative w-7 md:hidden h-7 flex justify-center items-center">
+            <div className="relative w-7 h-7 flex justify-center items-center">
               {isOpen ? (
                 <h1 className=" text-6xl  text-white">x</h1>
               ) : (
@@ -157,17 +157,17 @@ const Header = () => {
                 </Link>
               </li>
               <li className="text-4xl font-bold mb-6 hover:text-gray-400">
-                <Link href="/contact" onClick={() => handleMenuItemClick(2)}>
+                <Link href="/about" onClick={() => handleMenuItemClick(2)}>
                   About
                 </Link>
               </li>
               <li className="text-4xl font-bold mb-6 hover:text-gray-400">
-                <Link href="/hire-me" onClick={() => handleMenuItemClick(3)}>
+                <Link href="/hire" onClick={() => handleMenuItemClick(3)}>
                   Hire Me
                 </Link>
               </li>
             </ul>
-            
+
             <div className="flex gap-5 justify-center mt-8">
               <Link href="https://github.com/eerapheal" target="_blank">
                 <img
