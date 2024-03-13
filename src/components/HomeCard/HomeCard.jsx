@@ -1,87 +1,8 @@
+import Link from "next/link";
 import React from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import "remixicon/fonts/remixicon.css";
 
 const HomeCard = () => {
-  const settings = {
-    // dots: true,
-    infinite: true,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
-    loop: true,
-    cssEase: "linear",
-    responsive: [
-      {
-        breakpoint: 1700,
-        settings: {
-          slidesToShow: 6,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 1460,
-        settings: {
-          slidesToShow: 6,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 1290,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 1100,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 900,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 400,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-    ],
-  };
-
   return (
     <React.Fragment>
       <div
@@ -91,7 +12,7 @@ const HomeCard = () => {
             "linear-gradient(80deg, #eef7fb 0 60%,  #C9F6FF 0% 100%)",
           minHeight: "500px",
           maxHeight: "1200px",
-          height: "100%",
+          minHeight: "100VH",
           width: "100%",
         }}
       >
@@ -99,23 +20,30 @@ const HomeCard = () => {
           <div className="grid grid-flow-col-12">
             <div className="bg-white flex flex-col justify-center md:flex-row col-span-12 md-col-span-5 md:bg-transparent">
               <div className="container m-auto">
-                <div className="sm:pl-10 lg:pl-24 pl-0 py-20 md:py-0 md:text-start text-center">
+                <div className="sm:pl-10 lg:pl-24 pl-0 py-20 md:py-0 md:text-start text-center mt-20">
                   <p className="text-[#1c1641] text-3xl md:text-base lg:text-2xl text-semibold">
                     Hey There!
                   </p>
-                  <h1 className="text-[#223740] font-recoletaBlack text-5xl lg:text-7xl mt-5 md:mt-3">
+                  <h1 className="text-headingColor text-5xl lg:text-7xl mt-5 md:mt-3">
                     I&rsquo;m Raphael
                   </h1>
-                  <h2 className="text-[#223740] font-bold uppercase md:text-xl py-2">
+                  <h2 className="text-primaryColor font-bold uppercase md:text-xl py-2">
                     Full Stack Software Developer
                   </h2>
-                  <a
-                    href="/portfolio"
+                  <p className="text-[#1c1641] lg:pr-[170px] text-sm md:text-base lg:text-l text-semibold">
+                    I&rsquo;m a Full Stack Developer skilled in front-end and
+                    back-end tech, including HTML, CSS, JavaScript, React/Redux,
+                    Postgresql, Ruby, and Ruby on Rails. With experience in MERN
+                    Stack, I deliver top-notch, user-friendly sites and am
+                    always eager to learn new technologies.
+                  </p>
+                  <Link
+                    href="/contact"
                     alt="project"
                     className="inline-block cursor-pointer bg-[#47aede] py-2 px-5 font-bold mt-8 uppercase transition-all duration-400 ease-in-out rounded-xl text-white md:py-2 md:mt-10 lg:py-3 lg:px-8 hover:bg-[#223740] hover:show-lg transform hover:translate-y-1"
                   >
-                    Project
-                  </a>
+                    <i class="ri-mail-line mr-1"></i>Hire me
+                  </Link>
                   <a
                     href="raphael.pdf"
                     download="Ekpenisi E. raphael.pdf"
@@ -124,39 +52,53 @@ const HomeCard = () => {
                   >
                     My resume
                   </a>
+                  <div className="flex items-center gap-5 mt-5">
+                    <span className="text-smallTextColor text-xl lg:2xl max-w-[590px] font-[500]">
+                      connect with me:
+                    </span>
+                    <span>
+                      <a
+                        href="https://github.com/eerapheal"
+                        className="text-smallTextColor text-[25px] font-[600]"
+                        alt="GitHub"
+                      >
+                        <i class="ri-github-line"></i>
+                      </a>
+                    </span>
+                    <span>
+                      <a
+                        href="https://www.twitter.com/ekpenisiraphael"
+                        className="text-smallTextColor text-[25px] font-[600]"
+                        alt="Twitter"
+                      >
+                        <i class="ri-twitter-fill"></i>
+                      </a>
+                    </span>
+                    <span>
+                      <a
+                        href="https://www.linkedin.com/in/ekpenisiraphael/"
+                        className="text-smallTextColor text-[25px] font-[600]"
+                        alt="Linkedin"
+                      >
+                        <i class="ri-linkedin-box-fill"></i>
+                      </a>
+                    </span>
+                    <span>
+                      <a
+                        href="https://www.medium.com/@ekpenisiraphael/"
+                        className="text-smallTextColor text-[25px] font-[600]"
+                        alt="medium"
+                      >
+                        <i class="ri-medium-fill"></i>
+                      </a>
+                    </span>
+                  </div>
                 </div>
               </div>
               <div className="col-span-12 pt-[50px] md:bg-transparent bg-[#d9eef7] md:pt-[130px] md-col-span-7">
                 <div className="container m-auto">
                   <img src="ralph.png" decoding="async" alt="profile pic" />
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className="container m-auto absolute">
-            <div
-              className="relative max-w-sm bottom-[70px] md:max-w-5xl xl:max-w-6xl px-5 lg:px-14 overflow-auto mx-auto bg-white rounded-2xl z-20"
-              style={{
-                boxShadow: "#48afde -7px 20px 50px 7px",
-              }}
-            >
-              <div className="sm:py-6 lg:py-10 cursor-all-scroll">
-                <Slider {...settings} className="ml-5">
-                  <img src="/js.jpeg" alt="lang logo" className="h-12" />
-                  <img src="/css.jpeg" alt="lang logo" className="h-12" />
-                  <img src="/html.jpeg" alt="lang logo" className="h-12" />
-                  <img src="/react.jpeg" alt="lang logo" className="h-12" />
-                  <img src="/redux.jpeg" alt="lang logo" className="h-12" />
-                  <img src="/next.jpeg" alt="lang logo" className="h-12" />
-                  <img src="/ruby.jpeg" alt="lang logo" className="h-12" />
-                  <img src="/rails.jpeg" alt="lang logo" className="h-12" />
-                  <img src="/psql.jpeg" alt="lang logo" className="h-12" />
-                  <img src="/mongo.jpeg" alt="lang logo" className="h-12" />
-                  <img src="/node.jpeg" alt="lang logo" className="h-12" />
-                  <img src="/express.jpeg" alt="lang logo" className="h-12" />
-                  <img src="/prisma.jpeg" alt="lang logo" className="h-12" />
-                  <img src="/mysql.jpeg" alt="lang logo" className="h-12" />
-                </Slider>
               </div>
             </div>
           </div>

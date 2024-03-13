@@ -17,8 +17,8 @@ module.exports = {
         body: ['Inter', 'system-ui', 'sans-serif'],
       },
         colors: {
-        primaryColor: "#8873ef",
-        headingColor: "#081e21",
+        primaryColor: "#223740",
+        headingColor: "#223740",
         smallTextColor: "#6b1d51"
         },
     },
