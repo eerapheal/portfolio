@@ -25,8 +25,8 @@ const Page = () => {
         >
           <div className="">
             <p className="p-[40px] text-white text-2xl sm:text-3xl md:text-5xl lg:text:7xl text-center">
-              Absolutely! I'm all ears for discussing new projects or any topic
-              you fancy. Just drop me a line about what interests you, and we'll
+              Absolutely! I&rsquo;m all ears for discussing new projects or any topic
+              you fancy. Just drop me a line about what interests you, and we&rsquo;ll
               dive right in!
             </p>
           </div>
