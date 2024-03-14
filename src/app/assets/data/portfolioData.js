@@ -1,4 +1,3 @@
-
 const portfolios = [
   {
     id: "01",
@@ -8,7 +7,8 @@ const portfolios = [
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
     technologies: ["React", "Tailwind css", "Ruby", "RonR"],
-    siteUrl: "#",
+    liveSiteUrl: "#",
+    seeSourceUrl: "#",
   },
   {
     id: "02",
@@ -18,7 +18,8 @@ const portfolios = [
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
     technologies: ["React", "Tailwind css", "Ruby", "RonR"],
-    siteUrl: "#",
+    liveSiteUrl: "#",
+    seeSourceUrl: "#",
   },
   {
     id: "03",
@@ -28,7 +29,8 @@ const portfolios = [
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
     technologies: ["React", "Tailwind css", "Ruby", "RonR"],
-    siteUrl: "#",
+    liveSiteUrl: "#",
+    seeSourceUrl: "#",
   },
   {
     id: "04",
@@ -38,7 +40,8 @@ const portfolios = [
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
     technologies: ["React", "Tailwind css", "Ruby", "RonR"],
-    siteUrl: "#",
+    liveSiteUrl: "#",
+    seeSourceUrl: "#",
   },
   {
     id: "05",
@@ -48,7 +51,8 @@ const portfolios = [
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
     technologies: ["React", "Tailwind css", "Ruby", "RonR"],
-    siteUrl: "#",
+    liveSiteUrl: "#",
+    seeSourceUrl: "#",
   },
 
   {
@@ -59,7 +63,8 @@ const portfolios = [
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
     technologies: ["React", "Tailwind css", "Ruby", "RonR"],
-    siteUrl: "#",
+    liveSiteUrl: "#",
+    seeSourceUrl: "#",
   },
   {
     id: "07",
@@ -69,7 +74,8 @@ const portfolios = [
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
     technologies: ["React", "Tailwind css", "Ruby", "RonR"],
-    siteUrl: "#",
+    liveSiteUrl: "#",
+    seeSourceUrl: "#",
   },
   {
     id: "08",
@@ -79,7 +85,8 @@ const portfolios = [
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
     technologies: ["React", "Tailwind css", "Ruby", "Ruby"],
-    siteUrl: "#",
+    liveSiteUrl: "#",
+    seeSourceUrl: "#",
   },
   {
     id: "09",
@@ -89,7 +96,8 @@ const portfolios = [
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
     technologies: ["React", "Tailwind css", "Ruby", "RonR"],
-    siteUrl: "#",
+    liveSiteUrl: "#",
+    seeSourceUrl: "#",
   },
   {
     id: "10",
@@ -99,7 +107,8 @@ const portfolios = [
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
     technologies: ["React", "Tailwind css", "Ruby", "RonR"],
-    siteUrl: "#",
+    liveSiteUrl: "#",
+    seeSourceUrl: "#",
   },
   {
     id: "11",
@@ -109,7 +118,8 @@ const portfolios = [
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
     technologies: ["React", "Tailwind css", "Ruby", "RonR"],
-    siteUrl: "#",
+    liveSiteUrl: "#",
+    seeSourceUrl: "#",
   },
   {
     id: "12",
@@ -119,7 +129,8 @@ const portfolios = [
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
     technologies: ["React", "Tailwind css", "Ruby", "RonR"],
-    siteUrl: "#",
+    liveSiteUrl: "#",
+    seeSourceUrl: "#",
   },
   {
     id: "13",
@@ -129,7 +140,8 @@ const portfolios = [
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
     technologies: ["React", "Tailwind css", "Ruby", "RonR"],
-    siteUrl: "#",
+    liveSiteUrl: "#",
+    seeSourceUrl: "#",
   },
   {
     id: "14",
@@ -139,7 +151,8 @@ const portfolios = [
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
     technologies: ["React", "Tailwind css", "Ruby", "RonR"],
-    siteUrl: "#",
+    liveSiteUrl: "#",
+    seeSourceUrl: "#",
   },
 ];
 

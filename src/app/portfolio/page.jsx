@@ -50,17 +50,73 @@ const page = () => {
         style={{
           backgroundImage:
             "linear-gradient(80deg, #eef7fb 0 60%,  #C9F6FF 0% 100%)",
-          paddingTop: "140px",
+          paddingTop: "120px",
           minHeight: "100vh",
           width: "100%",
         }}
       >
         <div className="container m-auto">
           <div className="grid grid-flow-col-12">
+            <div className="mb-5 flex justify-center">
+              <h3 className="text-headingColor text center text-[2rem] font-[700]">
+                My recent project
+              </h3>
+            </div>
+            <div className="flex justify-center mb-14 items-center">
+              <div
+                data-aos="fade-zoom-in"
+                data-aos-delay="20"
+                data-aos-duration="1000"
+                className="flex flex-col md:flex-row rounded-[8px] justify-center items-center bg-white max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-[1]"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  boxShadow: "#48afde 2px 2px 2px 2px",
+                }}
+              >
+                <figure
+                  className="flex-1"
+                  style={{ width: "100%", height: "100%" }}
+                >
+                  <img
+                    className="rounded-[8px] h-full w-full object-cover"
+                    src="cont.jpeg"
+                    alt="portfolio"
+                  />
+                </figure>
+                <div className="p-5 flex-1">
+                  <h2 className="text-headerTextColor text-center pb-4">
+                    Global Treadings
+                  </h2>
+                  <p className="text-smallTextColor">
+                    Global Treadings is a dynamic community connecting writers
+                    and readers globally, boasting registered users and an admin
+                    dashboard. Admin login details: Email:
+                    ekpenisiraphael@globaltreadings.com, Password: 1234567. the
+                    platform leverages MongoDB, ExpressJS, ReactJS, Tailwind
+                    CSS, ReduxJS, NodeJS, and FlowbiteJS for seamless
+                    functionality.
+                  </p>
+                  <div className="flex items-center justify-between pt-4">
+                    <a>
+                      <button className="text-white bg-headingColor hover:bg-smallTextColor  py-2 px-4 rounded-[8px] font-[500] ease-in duration-200">
+                        See Live
+                      </button>
+                    </a>
+                    <a>
+                      <button className="text-white  hover:bg-headingColor bg-smallTextColor  py-2 px-4 rounded-[8px] font-[500] ease-in duration-200">
+                        See Source
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="flex items-center justify-between flex-wrap">
               <div className="mb-7 sm:mb-0">
                 <h3 className="text-headingColor text-[2rem] font-[700]">
-                  My recent project
+                  Recent and previous project
                 </h3>
               </div>
               <div className="flex gap-3">

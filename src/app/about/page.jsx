@@ -1,13 +1,13 @@
 "use client";
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import 'remixicon/fonts/remixicon.css'
+import Aos from "aos";
+import "aos/dist/aos.css";
+import "remixicon/fonts/remixicon.css";
 import React, { useEffect } from "react";
 
 const page = () => {
-  useEffect(()=> {
+  useEffect(() => {
     Aos.init();
-}, []);
+  }, []);
 
   return (
     <React.Fragment>
@@ -24,19 +24,13 @@ const page = () => {
         <div className="container m-auto">
           <div className="grid grid-flow-col-12">
             <div className="text-center">
-              <h2 className="text-headingColor font-[800] text-[2.4rem] mb-5">
-                What do I provide
-              </h2>
               <p className="lg:max-w-[600px] lg:mx-auto text-headingColor font[500] text[16px] loading-7">
-                I&rsquo;m a Full Stack Developer with expertise in both
-                front-end and back-end technologies. I have a passion for
-                building dynamic and responsive web applications and have
-                experience working with a variety of technologies including
-                HTML, CSS, JavaScript, React/Redux, Postgresql, Ruby and Ruby on
-                Rails. I am comfortable working on both the client and server
-                side of a web application and have a proven track record of
-                delivering high-quality, functional, and user-friendly websites.
-                I am always eager to learn new technologies.
+                I&rsquo;m a full-stack software developer who completed software
+                development at Microverse. I’ve spent approximately 40 hours per
+                week in remote software development in my last few months. I
+                learned to communicate and collaborate with developers from all
+                over the world. And most importantly, I’ve built numerous
+                projects
               </p>
             </div>
             <div className="flex flex-col justify-center sm:py-12">
@@ -179,14 +173,14 @@ const page = () => {
                               UI/UX Design
                             </h3>
                             <p className="text-[14px] text-smallTextColor group-hover:text-white group-hover:font-[500] loading-7">
-                              I'm deeply passionate about creating immersive and
-                              user-centric web experiences. With a strong
-                              foundation in UI/UX principles, I leverage a
-                              diverse toolkit of technologies including Tailwind
-                              CSS, SCSS, Bootstrap, and others to bring designs
-                              to life. My focus is on delivering intuitive and
-                              visually compelling interfaces that engage users
-                              and elevate brands.
+                              I&rsquo;m deeply passionate about creating
+                              immersive and user-centric web experiences. With a
+                              strong foundation in UI/UX principles, I leverage
+                              a diverse toolkit of technologies including
+                              Tailwind CSS, SCSS, Bootstrap, and others to bring
+                              designs to life. My focus is on delivering
+                              intuitive and visually compelling interfaces that
+                              engage users and elevate brands.
                             </p>
                           </div>
                         </div>

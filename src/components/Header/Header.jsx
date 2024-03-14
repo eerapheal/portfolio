@@ -34,13 +34,13 @@ const Header = () => {
       <header
         className={`${
           isScrolled ? "headerShow" : ""
-        }  invisible md:visible w-full fixed top-0 transition-all z-50 duration-500`}
+        }  w-full fixed top-0 transition-all z-50 duration-500`}
         style={{
           backgroundColor: isScrolled ? "#fff" : "transparent",
-          boxShadow: isScrolled ? "#48afde -10px 25px 50px 10px" : "",
+          boxShadow: isScrolled ? "#48afde 2px 2px 2px 2px" : "",
         }}
       >
-        <nav className="xl:max-w-4xl 2xl:max-w-7xl m-auto">
+        <nav className="  invisible md:visible xl:max-w-4xl 2xl:max-w-7xl m-auto">
           <ul className="flex flex-row items-center h-24">
             <li className=" group text-2xl relative font-bold mr-20">
               {selectedIndex === 0 ? (
@@ -108,101 +108,107 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-      </header>
 
-      <header
-        className={`${
-          isScrolled ? "headerShow" : ""
-        } w-full fixed top-0 md:invisible transition-all z-50 duration-500 h-[75px]`}
-        style={{
-          backgroundColor: isScrolled ? "#fff" : "transparent",
-          boxShadow: isScrolled ? "#48afde -10px 25px 40px 10px" : "",
-        }}
-      >
-        <div className="relative">
-          <div
-            className="z-30 absolute cursor-pointer m-5 flex justify-center items-center"
-            onClick={toggleMenu}
-          >
-            <div className="relative w-7 h-7 flex justify-center items-center">
-              {isOpen ? (
-                <h1 className=" text-6xl  text-white">x</h1>
-              ) : (
-                <>
-                  <div className="flex flex-col">
-                    <span className="h-1 w-10 m-1 bg-black"></span>
-                    <span className="h-1 w-10 m-1 bg-black"></span>
-                    <span className="h-1 w-10 m-1 bg-black"></span>
-                  </div>
-                </>
-              )}
+        {/* mobile */}
+        <nav
+          className={`${
+            isScrolled ? "headerShow" : ""
+          } w-full fixed top-3 md:invisible transition-all z-50 duration-500 h-[75px]`}
+        >
+          <div className="relative">
+            <div
+              className="z-30 absolute cursor-pointer m-5 flex justify-center items-center"
+              onClick={toggleMenu}
+            >
+              <div className="relative w-7 h-7 flex justify-center items-center">
+                {isOpen ? (
+                  <h1 className=" text-6xl  text-white">x</h1>
+                ) : (
+                  <>
+                    <div className="flex flex-col">
+                      <span className="h-1 w-10 m-1 bg-black"></span>
+                      <span className="h-1 w-10 m-1 bg-black"></span>
+                      <span className="h-1 w-10 m-1 bg-black"></span>
+                    </div>
+                  </>
+                )}
+              </div>
             </div>
           </div>
-        </div>
-        {isOpen && (
-          <nav
-            className={`md:hidden absolute top-0 pt-[200px] left-0 right-0 bg-opacity-95 w-full h-screen transition-all bg-[#223740] ${
-              isOpen ? "translate-y-0" : "-translate-y-full"
-            }`}
-          >
-            <ul className="flex flex-col items-center text-[#fff]">
-              <li className="text-4xl font-bold mb-6 hover:text-gray-400">
-                <Link href="/" onClick={() => handleMenuItemClick(0)}>
-                  Home
-                </Link>
-              </li>
-              <li className="text-4xl font-bold mb-6 hover:text-gray-400">
-                <Link href="/portfolio" onClick={() => handleMenuItemClick(1)}>
-                  Portfolio
-                </Link>
-              </li>
-              <li className="text-4xl font-bold mb-6 hover:text-gray-400">
-                <Link href="/contact" onClick={() => handleMenuItemClick(2)}>
-                  Contact
-                </Link>
-              </li>
-              <li className="text-4xl font-bold mb-6 hover:text-gray-400">
-                <Link href="/about" onClick={() => handleMenuItemClick(3)}>
-                  About
-                </Link>
-              </li>
-            </ul>
+          {isOpen && (
+            <div
+              className={`md:hidden absolute top-0 pt-[200px] left-0 right-0 bg-opacity-95 w-full h-screen transition-all bg-[#223740] ${
+                isOpen ? "translate-y-0" : "-translate-y-full"
+              }`}
+            >
+              <ul className="flex flex-col items-center text-[#fff]">
+                <li className="text-4xl font-bold mb-6 hover:text-gray-400">
+                  <Link href="/" onClick={() => handleMenuItemClick(0)}>
+                    Home
+                  </Link>
+                </li>
+                <li className="text-4xl font-bold mb-6 hover:text-gray-400">
+                  <Link
+                    href="/portfolio"
+                    onClick={() => handleMenuItemClick(1)}
+                  >
+                    Portfolio
+                  </Link>
+                </li>
+                <li className="text-4xl font-bold mb-6 hover:text-gray-400">
+                  <Link href="/contact" onClick={() => handleMenuItemClick(2)}>
+                    Contact
+                  </Link>
+                </li>
+                <li className="text-4xl font-bold mb-6 hover:text-gray-400">
+                  <Link href="/about" onClick={() => handleMenuItemClick(3)}>
+                    About
+                  </Link>
+                </li>
+              </ul>
 
-            <div className="flex gap-5 justify-center mt-8">
-              <Link href="https://github.com/eerapheal" target="_blank">
-                <img
-                  src="/GitHub-Logo.png"
-                  alt="GitHub"
-                  className="w-10 h-10 rounded-2xl"
-                />
-              </Link>
-              <Link
-                href="https://www.linkedin.com/in/ekpenisiraphael/"
-                target="_blank"
-              >
-                <img
-                  src="/linkedin-icon.jpeg"
-                  alt="LinkedIn"
-                  className="w-10 h-10 rounded-2xl"
-                />
-              </Link>
-              <Link href="https://medium.com/@ekpenisiraphael" target="_blank">
-                <img
-                  src="/medium.jpg"
-                  alt="Medium"
-                  className="w-10 h-10 rounded-2xl"
-                />
-              </Link>
-              <Link href="https://twitter.com/ekpenisiraphael" target="_blank">
-                <img
-                  src="/twitter-icon.jpeg"
-                  alt="Twitter"
-                  className="w-10 h-10 rounded-3xl"
-                />
-              </Link>
+              <div className="flex gap-5 justify-center mt-8">
+                <Link href="https://github.com/eerapheal" target="_blank">
+                  <img
+                    src="/GitHub-Logo.png"
+                    alt="GitHub"
+                    className="w-10 h-10 rounded-2xl"
+                  />
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/in/ekpenisiraphael/"
+                  target="_blank"
+                >
+                  <img
+                    src="/linkedin-icon.jpeg"
+                    alt="LinkedIn"
+                    className="w-10 h-10 rounded-2xl"
+                  />
+                </Link>
+                <Link
+                  href="https://medium.com/@ekpenisiraphael"
+                  target="_blank"
+                >
+                  <img
+                    src="/medium.jpg"
+                    alt="Medium"
+                    className="w-10 h-10 rounded-2xl"
+                  />
+                </Link>
+                <Link
+                  href="https://twitter.com/ekpenisiraphael"
+                  target="_blank"
+                >
+                  <img
+                    src="/twitter-icon.jpeg"
+                    alt="Twitter"
+                    className="w-10 h-10 rounded-3xl"
+                  />
+                </Link>
+              </div>
             </div>
-          </nav>
-        )}
+          )}
+        </nav>
       </header>
     </React.Fragment>
   );
