@@ -1,6 +1,12 @@
-import React from "react";
+"use client"
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
-const Page = () => {
+const Contact = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <React.Fragment>
       <div
@@ -88,4 +94,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Contact;

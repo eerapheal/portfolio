@@ -1,10 +1,11 @@
 "use client";
+import "remixicon/fonts/remixicon.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import "remixicon/fonts/remixicon.css";
 import React, { useEffect } from "react";
+import Image from "next/image";
 
-const page = () => {
+const Contact = () => {
   useEffect(() => {
     Aos.init();
   }, []);
@@ -12,7 +13,7 @@ const page = () => {
   return (
     <React.Fragment>
       <div
-        className="home"
+        className="contact"
         style={{
           backgroundImage:
             "linear-gradient(80deg, #eef7fb 0 60%,  #C9F6FF 0% 100%)",
@@ -26,10 +27,10 @@ const page = () => {
             <div className="text-center">
               <p className="lg:max-w-[600px] lg:mx-auto text-headingColor font[500] text[16px] loading-7">
                 I&rsquo;m a full-stack software developer who completed software
-                development at Microverse. I’ve spent approximately 40 hours per
+                development at Microverse. I&rsquo;ve spent approximately 40 hours per
                 week in remote software development in my last few months. I
                 learned to communicate and collaborate with developers from all
-                over the world. And most importantly, I’ve built numerous
+                over the world. And most importantly, I&rsquo;ve built numerous
                 projects
               </p>
             </div>
@@ -70,10 +71,13 @@ const page = () => {
                                   -translate-x-1/2 -translate-y-4 sm:translate-y-0 flex items-center justify-center"
                       >
                         <figure className="">
-                          <img
+                          <Image
                             className=""
                             src="/images/front-end.png"
                             alt="lineball"
+                            width={20}
+                            height={20}
+                            priority
                           />
                         </figure>
                       </div>
@@ -111,10 +115,13 @@ const page = () => {
                                   -translate-x-1/2 -translate-y-4 sm:translate-y-0 flex items-center justify-center"
                       >
                         <figure className="">
-                          <img
+                          <Image
                             className=""
                             src="/images/backend.png"
                             alt="lineball"
+                            width={20}
+                            height={20}
+                            priority
                           />
                         </figure>
                       </div>
@@ -149,10 +156,13 @@ const page = () => {
                                   -translate-x-1/2 -translate-y-4 sm:translate-y-0 flex items-center justify-center"
                       >
                         <figure className="">
-                          <img
+                          <Image
                             className=""
                             src="/images/apps.png"
                             alt="lineball"
+                            width={20}
+                            height={20}
+                            priority
                           />
                         </figure>
                       </div>
@@ -190,10 +200,13 @@ const page = () => {
                                   -translate-x-1/2 -translate-y-4 sm:translate-y-0 flex items-center justify-center"
                       >
                         <figure className="">
-                          <img
+                          <Image
                             className=""
                             src="/images/design.png"
                             alt="lineball"
+                            width={20}
+                            height={20}
+                            priority
                           />
                         </figure>
                       </div>
@@ -209,4 +222,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Contact;

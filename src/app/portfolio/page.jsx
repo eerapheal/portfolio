@@ -5,11 +5,13 @@ import Modal from "@/components/Modal/Modal";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "remixicon/fonts/remixicon.css";
+import Image from "next/image";
 
-const page = () => {
+const Portfolio = () => {
   useEffect(() => {
     Aos.init();
   }, []);
+  
   const [portfolios, setPortfolios] = useState(data);
   const [selectTab, setSelectTab] = useState("all");
   const [showModal, setShowModal] = useState("false");
@@ -67,7 +69,7 @@ const page = () => {
                 data-aos="fade-zoom-in"
                 data-aos-delay="20"
                 data-aos-duration="1000"
-                className="flex flex-col md:flex-row rounded-[8px] justify-center items-center bg-white max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-[1]"
+                className="flex flex-col md:flex-row rounded-[8px] justify-center items-center bg-white max-w-full sm:w-[48.5%] md:w-[49.8%] lg:w-[62.2%] relative z-[1]"
                 style={{
                   width: "100%",
                   height: "100%",
@@ -78,10 +80,14 @@ const page = () => {
                   className="flex-1"
                   style={{ width: "100%", height: "100%" }}
                 >
-                  <img
+                  <Image
                     className="rounded-[8px] h-full w-full object-cover"
-                    src="cont.jpeg"
+                    src="/santpic.svg"
                     alt="portfolio"
+                    width={800}
+                    height={300}
+                    priority
+                    sizes="(max-width: 900px) 100%, 800px"
                   />
                 </figure>
                 <div className="p-5 flex-1">
@@ -155,10 +161,14 @@ const page = () => {
                     className="group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-[1]"
                   >
                     <figure>
-                      <img
+                      <Image
                         className="rounded-[8px]"
                         src={portfolio.imgUrl}
                         alt="portfolio"
+                        width={400}
+                        height={200}
+                        priority
+                        // sizes="(max-width: 900px) 100%, 800px"
                       />
                     </figure>
                     <div className="w-full h-full bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block">
@@ -193,4 +203,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Portfolio;

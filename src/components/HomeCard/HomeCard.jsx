@@ -1,3 +1,5 @@
+"use client";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import "remixicon/fonts/remixicon.css";
@@ -42,7 +44,7 @@ const HomeCard = () => {
                     alt="project"
                     className="inline-block cursor-pointer bg-[#47aede] py-2 px-5 font-bold mt-8 uppercase transition-all duration-400 ease-in-out rounded-xl text-white md:py-2 md:mt-10 lg:py-3 lg:px-8 hover:bg-[#223740] hover:show-lg transform hover:translate-y-1"
                   >
-                    <i class="ri-mail-line mr-1"></i>Hire me
+                    <i className="ri-mail-line mr-1"></i>Hire me
                   </Link>
                   <a
                     href="raphael.pdf"
@@ -62,7 +64,7 @@ const HomeCard = () => {
                         className="text-smallTextColor text-[25px] font-[600]"
                         alt="GitHub"
                       >
-                        <i class="ri-github-line"></i>
+                        <i className="ri-github-line"></i>
                       </a>
                     </span>
                     <span>
@@ -71,7 +73,7 @@ const HomeCard = () => {
                         className="text-smallTextColor text-[25px] font-[600]"
                         alt="Twitter"
                       >
-                        <i class="ri-twitter-fill"></i>
+                        <i className="ri-twitter-fill"></i>
                       </a>
                     </span>
                     <span>
@@ -80,7 +82,7 @@ const HomeCard = () => {
                         className="text-smallTextColor text-[25px] font-[600]"
                         alt="Linkedin"
                       >
-                        <i class="ri-linkedin-box-fill"></i>
+                        <i className="ri-linkedin-box-fill"></i>
                       </a>
                     </span>
                     <span>
@@ -89,7 +91,7 @@ const HomeCard = () => {
                         className="text-smallTextColor text-[25px] font-[600]"
                         alt="medium"
                       >
-                        <i class="ri-medium-fill"></i>
+                        <i className="ri-medium-fill"></i>
                       </a>
                     </span>
                   </div>
@@ -97,7 +99,13 @@ const HomeCard = () => {
               </div>
               <div className="col-span-12 pt-[50px] md:bg-transparent bg-[#d9eef7] md:pt-[130px] md-col-span-7">
                 <div className="container m-auto">
-                  <img src="ralph.png" decoding="async" alt="profile pic" />
+                  <Image
+                    src="/ralph.png"
+                    decoding="async"
+                    alt="profile pic"
+                    width={500}
+                    height={500}
+                  />
                 </div>
               </div>
             </div>

@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
@@ -169,7 +170,7 @@ const Header = () => {
 
               <div className="flex gap-5 justify-center mt-8">
                 <Link href="https://github.com/eerapheal" target="_blank">
-                  <img
+                  <Image
                     src="/GitHub-Logo.png"
                     alt="GitHub"
                     className="w-10 h-10 rounded-2xl"
@@ -179,7 +180,7 @@ const Header = () => {
                   href="https://www.linkedin.com/in/ekpenisiraphael/"
                   target="_blank"
                 >
-                  <img
+                  <Image
                     src="/linkedin-icon.jpeg"
                     alt="LinkedIn"
                     className="w-10 h-10 rounded-2xl"
@@ -189,7 +190,7 @@ const Header = () => {
                   href="https://medium.com/@ekpenisiraphael"
                   target="_blank"
                 >
-                  <img
+                  <Image
                     src="/medium.jpg"
                     alt="Medium"
                     className="w-10 h-10 rounded-2xl"
@@ -199,7 +200,7 @@ const Header = () => {
                   href="https://twitter.com/ekpenisiraphael"
                   target="_blank"
                 >
-                  <img
+                  <Image
                     src="/twitter-icon.jpeg"
                     alt="Twitter"
                     className="w-10 h-10 rounded-3xl"

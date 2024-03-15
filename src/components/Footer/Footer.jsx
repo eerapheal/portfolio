@@ -4,6 +4,7 @@ import Link from "next/link";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Image from "next/image";
 
 const Footer = () => {
   const settings = {
@@ -97,20 +98,20 @@ const Footer = () => {
           >
             <div className="sm:py-6 lg:py-10 cursor-all-scroll">
               <Slider {...settings} className="ml-5">
-                <img src="/js.jpeg" alt="lang logo" className="h-12" />
-                <img src="/css.jpeg" alt="lang logo" className="h-12" />
-                <img src="/html.jpeg" alt="lang logo" className="h-12" />
-                <img src="/react.jpeg" alt="lang logo" className="h-12" />
-                <img src="/redux.jpeg" alt="lang logo" className="h-12" />
-                <img src="/next.jpeg" alt="lang logo" className="h-12" />
-                <img src="/ruby.jpeg" alt="lang logo" className="h-12" />
-                <img src="/rails.jpeg" alt="lang logo" className="h-12" />
-                <img src="/psql.jpeg" alt="lang logo" className="h-12" />
-                <img src="/mongo.jpeg" alt="lang logo" className="h-12" />
-                <img src="/node.jpeg" alt="lang logo" className="h-12" />
-                <img src="/express.jpeg" alt="lang logo" className="h-12" />
-                <img src="/prisma.jpeg" alt="lang logo" className="h-12" />
-                <img src="/mysql.jpeg" alt="lang logo" className="h-12" />
+                <Image src="/js.jpeg" alt="lang logo" className="h-12" width={20} height={20} priority />
+                <Image src="/css.jpeg" alt="lang logo" className="h-12" width={20} height={20} />
+                <Image src="/html.jpeg" alt="lang logo" className="h-12" width={20} height={20} />
+                <Image src="/react.jpeg" alt="lang logo" className="h-12" width={20} height={20} priority/>
+                <Image src="/redux.jpeg" alt="lang logo" className="h-12" width={20} height={20} priority/>
+                <Image src="/next.jpeg" alt="lang logo" className="h-12" width={20} height={20} priority/>
+                <Image src="/ruby.jpeg" alt="lang logo" className="h-12" width={20} height={20} priority/>
+                <Image src="/rails.jpeg" alt="lang logo" className="h-12" width={20} height={20} priority/>
+                <Image src="/psql.jpeg" alt="lang logo" className="h-12" width={20} height={20} priority/>
+                <Image src="/mongo.jpeg" alt="lang logo" className="h-12" width={20} height={20} priority/>
+                <Image src="/node.jpeg" alt="lang logo" className="h-12" width={20} height={20} priority/>
+                <Image src="/express.jpeg" alt="lang logo" className="h-12" width={20} height={20} priority/>
+                <Image src="/prisma.jpeg" alt="lang logo" className="h-12" width={20} height={20} priority/>
+                <Image src="/mysql.jpeg" alt="lang logo" className="h-12" width={20} height={20} priority/>
               </Slider>
             </div>
           </div>
@@ -123,34 +124,39 @@ const Footer = () => {
           </div>
           <div className="flex gap-5 justify-center">
             <Link href="https://github.com/eerapheal" target="_blank">
-              <img
+              <Image
                 src="/GitHub-Logo.png"
                 alt="GitHub"
                 className="w-10 h-10 rounded-2xl"
+                width={20} height={20} priority
               />
             </Link>
             <Link
               href="https://www.linkedin.com/in/ekpenisiraphael/"
               target="_blank"
             >
-              <img
+              <Image
                 src="/linkedin-icon.jpeg"
                 alt="LinkedIn"
                 className="w-10 h-10 rounded-2xl"
+                width={20} height={20} priority
               />
             </Link>
             <Link href="https://medium.com/@ekpenisiraphael" target="_blank">
-              <img
+              <Image
                 src="/medium.jpg"
                 alt="Medium"
-                className="w-10 h-10 rounded-2xl"
+                className="w-10 h-10 object-cover rounded-2xl"
+                width={20} height={20} priority
+                
               />
             </Link>
             <Link href="https://twitter.com/ekpenisiraphael" target="_blank">
-              <img
+              <Image
                 src="/twitter-icon.jpeg"
                 alt="Twitter"
                 className="w-10 h-10 rounded-3xl"
+                width={20} height={20} priority
               />
             </Link>
           </div>

@@ -1,6 +1,7 @@
 import React from "react";
 
 import portfolios from "@/app/assets/data/portfolioData";
+import Image from "next/image";
 
 const Modal = ({ activeID, setShowModal }) => {
   const portfolio = portfolios.find((portfolio) => portfolio.id === activeID);
@@ -11,17 +12,20 @@ const Modal = ({ activeID, setShowModal }) => {
   return (
     <div className="w-full h-full fixed top-0 z-50 bg-headingColor bg-opacity-40 ">
       <div
-        className="w-full md:max-w-[700px]  absolute top-1/2 left-1/2 z-20 bg-white rounded-[8px] transform -translate-x-1/2 -translate-y-1/2 p-5"
+        className="w-full md:max-w-[90%]  absolute top-1/2 left-1/2 z-20 bg-white rounded-[8px] transform -translate-x-1/2 -translate-y-1/2 p-5"
         style={{
           boxShadow: "#48afde 2px 2px 5px 2px",
         }}
       >
         <div>
           <figure>
-            <img
-              className="rounded-[8px] h-[250px]"
+            <Image
+              className="rounded-[8px] max-h-[320px]"
               src={portfolio.imgUrl}
               alt=""
+              width={800}
+              height={200}
+              priority
             />
           </figure>
         </div>
