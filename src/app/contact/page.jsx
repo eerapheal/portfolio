@@ -1,7 +1,7 @@
 "use client"
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import React,  { useEffect } from "react";
 
 const Contact = () => {
   useEffect(() => {
