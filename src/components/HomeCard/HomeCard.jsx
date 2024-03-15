@@ -8,7 +8,7 @@ const HomeCard = () => {
   return (
     <React.Fragment>
       <div
-        className="home"
+        className="md:pt-20"
         style={{
           backgroundImage:
             "linear-gradient(80deg, #eef7fb 0 60%,  #C9F6FF 0% 100%)",
@@ -22,7 +22,7 @@ const HomeCard = () => {
           <div className="grid grid-flow-col-12">
             <div className="bg-white flex flex-col justify-center md:flex-row col-span-12 md-col-span-5 md:bg-transparent">
               <div className="container m-auto">
-                <div className="sm:pl-10 lg:pl-24 pl-0 py-20 md:py-0 md:text-start text-center mt-20">
+                <div className="sm:pl-10 lg:pl-24 pl-0 py-20 md:py-0 text-start mt-20">
                   <p className="text-[#1c1641] text-3xl md:text-base lg:text-2xl text-semibold">
                     Hey There!
                   </p>

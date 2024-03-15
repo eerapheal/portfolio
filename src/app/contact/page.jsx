@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <React.Fragment>
       <div
-        className="home flex items-center justify-center flex-col bg:opacity-95 bg-[#223740]"
+        className="home flex md:pt-20 items-center justify-center flex-col bg:opacity-95 bg-[#223740]"
         style={{
           backgroundImage:
             "linear-gradient(80deg, #eef7fb 0 60%,  #C9F6FF 0% 100%)",
