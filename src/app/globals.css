@@ -2,15 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* global css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 /* for the a link onClick tick */
@@ -22,7 +23,7 @@ body {
   width: 2rem;
   border-radius: 0.5rem;
   background-color: #1c93e2;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   position: absolute;
 }
 
