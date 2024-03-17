@@ -52,7 +52,6 @@ const Portfolio = () => {
         style={{
           backgroundImage:
             "linear-gradient(80deg, #eef7fb 0 60%,  #C9F6FF 0% 100%)",
-          paddingTop: "50px",
           minHeight: "100vh",
           width: "100%",
           flexDirection: "column",
@@ -155,7 +154,7 @@ const Portfolio = () => {
                   </button>
                 </div>
               </div>
-              <div className="flex flex-col justify-center items-center gap-4 flex-wrap mt-12">
+              <div className="flex flex-col md:flex-row justify-center items-center gap-4 flex-wrap mt-12">
                 {portfolios?.slice(0, nextItems)?.map((portfolio, index) => (
                   <div
                     key={index}
