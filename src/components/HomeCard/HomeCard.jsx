@@ -8,21 +8,19 @@ const HomeCard = () => {
   return (
     <React.Fragment>
       <div
-        className="md:pt-20"
+        className="md:pt-15"
         style={{
           backgroundImage:
             "linear-gradient(80deg, #eef7fb 0 60%,  #C9F6FF 0% 100%)",
-          minHeight: "500px",
-          maxHeight: "1200px",
-          minHeight: "100VH",
+          minHeight: "100vh",
           width: "100%",
         }}
       >
         <div className="container m-auto">
           <div className="grid grid-flow-col-12">
-            <div className="bg-white flex flex-col justify-center md:flex-row col-span-12 md-col-span-5 md:bg-transparent">
+            <div className="bg-red flex flex-col  pt-20 justify-center md:flex-row col-span-12 md-col-span-5 md:bg-transparent">
               <div className="container m-auto">
-                <div className="sm:pl-10 lg:pl-24 pl-0 py-20 md:py-0 text-start mt-20">
+                <div className="sm:pl-10 lg:pl-24 pl-0 py-20 px-2 sm:px-0 text-center sm:text-start">
                   <p className="text-[#1c1641] text-3xl md:text-base lg:text-2xl text-semibold">
                     Hey There!
                   </p>
@@ -46,16 +44,16 @@ const HomeCard = () => {
                   >
                     <i className="ri-mail-line mr-1"></i>Hire me
                   </Link>
-                  <a
+                  <Link
                     href="raphael.pdf"
                     download="Ekpenisi E. raphael.pdf"
                     alt="resume"
                     className="ml-10 cursor-pointer inline-block bg-[#223740] py-2 px-5 font-bold mt-8 uppercase transition-all duration-400 ease-in-out rounded-xl text-white md:py-2 md:mt-10 lg:py-3 lg:px-8 hover:bg-[#47aede] hover:show-lg transform hover:translate-y-1"
                   >
                     My resume
-                  </a>
-                  <div className="flex items-center gap-5 mt-5">
-                    <span className="text-smallTextColor text-xl lg:2xl max-w-[590px] font-[500]">
+                  </Link>
+                  <div className="items-center gap-5 mt-5">
+                    <span className="text-smallTextColor text-xl lg:2xl font-[500]">
                       connect with me:
                     </span>
                     <span>

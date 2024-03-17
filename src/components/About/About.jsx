@@ -13,29 +13,30 @@ const Contact = () => {
   return (
     <React.Fragment>
       <div
+        id="about"
         className="contact"
         style={{
           backgroundImage:
             "linear-gradient(80deg, #eef7fb 0 60%,  #C9F6FF 0% 100%)",
-          paddingTop: "140px",
+          paddingTop: "60px",
           minHeight: "100vh",
-          width: "100%",
+          overflow: "hidden",
         }}
       >
         <div className="container m-auto">
           <div className="grid grid-flow-col-12">
             <div className="text-center">
-              <p className="lg:max-w-[600px] lg:mx-auto text-headingColor font[500] text[16px] loading-7">
+              <p className="lg:max-w-[600px] p-1 lg:mx-auto text-headingColor font[500] text[16px] loading-7">
                 I&rsquo;m a full-stack software developer who completed software
-                development at Microverse. I&rsquo;ve spent approximately 40 hours per
-                week in remote software development in my last few months. I
-                learned to communicate and collaborate with developers from all
-                over the world. And most importantly, I&rsquo;ve built numerous
-                projects
+                development at Microverse. I&rsquo;ve spent approximately 40
+                hours per week in remote software development in my last few
+                months. I learned to communicate and collaborate with developers
+                from all over the world. And most importantly, I&rsquo;ve built
+                numerous projects
               </p>
             </div>
             <div className="flex flex-col justify-center sm:py-12">
-              <div className="w-full py-3 px-2 sm:max-w-xl md:max-w-4xl :max-w-6xl sm:mx-auto sm:px-0">
+              <div className="w-full overFlow-hidden py-3 px-2 sm:max-w-xl md:max-w-4xl :max-w-6xl sm:mx-auto sm:px-0">
                 <div className="relative text-gray-700 antialiased text-sm font-semibold">
                   {/* {===================== middle line} */}
                   <div className="hidden absolute w-1 sm:block bg-indigo-300 h-full left-1/2 transform"></div>

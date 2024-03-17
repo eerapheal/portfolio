@@ -50,7 +50,7 @@ const Header = () => {
                 <span className="menu-effect transform opacity-100 rotate-12 group-hover:rotate-12  group-hover:opacity-100"></span>
               )}
               <Link
-                href="/"
+                href="#home"
                 className={`menu-item ${
                   selectedIndex === 0 ? "text-black" : ""
                 } text-[#666d47] group-hover:text-gray-800`}
@@ -66,7 +66,7 @@ const Header = () => {
                 <span className="menu-effect transform opacity-100 rotate-12 group-hover:rotate-12  group-hover:opacity-100"></span>
               )}
               <Link
-                href="/portfolio"
+                href="#portfolio"
                 className={`menu-item ${
                   selectedIndex === 0 ? "text-black" : ""
                 } text-[#666d47] group-hover:text-gray-800`}
@@ -82,7 +82,7 @@ const Header = () => {
                 <span className="menu-effect transform opacity-100 rotate-12 group-hover:rotate-12  group-hover:opacity-100"></span>
               )}
               <Link
-                href="/contact"
+                href="#contact"
                 className={`menu-item ${
                   selectedIndex === 0 ? "text-black" : ""
                 } text-[#666d47] group-hover:text-gray-800`}
@@ -98,7 +98,7 @@ const Header = () => {
                 <span className="menu-effect transform opacity-100 rotate-12 group-hover:rotate-12  group-hover:opacity-100"></span>
               )}
               <Link
-                href="/about"
+                href="#about"
                 className={`menu-item ${
                   selectedIndex === 0 ? "text-black" : ""
                 } text-[#666d47] group-hover:text-gray-800`}
@@ -144,25 +144,25 @@ const Header = () => {
             >
               <ul className="flex flex-col items-center text-[#fff]">
                 <li className="text-4xl font-bold mb-6 hover:text-gray-400">
-                  <Link href="/" onClick={() => handleMenuItemClick(0)}>
+                  <Link href="#home" onClick={() => handleMenuItemClick(0)}>
                     Home
                   </Link>
                 </li>
                 <li className="text-4xl font-bold mb-6 hover:text-gray-400">
                   <Link
-                    href="/portfolio"
+                    href="#portfolio"
                     onClick={() => handleMenuItemClick(1)}
                   >
                     Portfolio
                   </Link>
                 </li>
                 <li className="text-4xl font-bold mb-6 hover:text-gray-400">
-                  <Link href="/contact" onClick={() => handleMenuItemClick(2)}>
+                  <Link href="#contact" onClick={() => handleMenuItemClick(2)}>
                     Contact
                   </Link>
                 </li>
                 <li className="text-4xl font-bold mb-6 hover:text-gray-400">
-                  <Link href="/about" onClick={() => handleMenuItemClick(3)}>
+                  <Link href="#about" onClick={() => handleMenuItemClick(3)}>
                     About
                   </Link>
                 </li>
@@ -174,6 +174,9 @@ const Header = () => {
                     src="/GitHub-Logo.png"
                     alt="GitHub"
                     className="w-10 h-10 rounded-2xl"
+                    width={50}
+                    height={50}
+                    priority
                   />
                 </Link>
                 <Link
@@ -184,6 +187,9 @@ const Header = () => {
                     src="/linkedin-icon.jpeg"
                     alt="LinkedIn"
                     className="w-10 h-10 rounded-2xl"
+                    width={50}
+                    height={50}
+                    priority
                   />
                 </Link>
                 <Link
@@ -194,6 +200,9 @@ const Header = () => {
                     src="/medium.jpg"
                     alt="Medium"
                     className="w-10 h-10 rounded-2xl"
+                    width={50}
+                    height={50}
+                    priority
                   />
                 </Link>
                 <Link
@@ -204,6 +213,9 @@ const Header = () => {
                     src="/twitter-icon.jpeg"
                     alt="Twitter"
                     className="w-10 h-10 rounded-3xl"
+                    width={50}
+                    height={50}
+                    priority
                   />
                 </Link>
               </div>

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import data from "../assets/data/portfolioData";
-import Modal from "@/components/Modal/Modal";
+import data from "@/app/assets/data/portfolioData";
+import Modal from "../Modal/Modal";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "remixicon/fonts/remixicon.css";
@@ -11,7 +11,7 @@ const Portfolio = () => {
   useEffect(() => {
     Aos.init();
   }, []);
-  
+
   const [portfolios, setPortfolios] = useState(data);
   const [selectTab, setSelectTab] = useState("all");
   const [showModal, setShowModal] = useState("false");
@@ -48,20 +48,24 @@ const Portfolio = () => {
   return (
     <React.Fragment>
       <div
-        className="home"
+        id="portfolio"
         style={{
           backgroundImage:
             "linear-gradient(80deg, #eef7fb 0 60%,  #C9F6FF 0% 100%)",
-          paddingTop: "120px",
+          paddingTop: "50px",
           minHeight: "100vh",
           width: "100%",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
-        <div className="container m-auto">
+        <div className="container m-auto ">
           <div className="grid grid-flow-col-12">
-            <div className="mb-5 flex justify-center">
-              <h3 className="text-headingColor text center text-[2rem] font-[700]">
-                My recent project
+            <div className="mb-5 flex justify-center w-full">
+              <h3 className="text-headingColor text-center text-[1.5rem] md:text-[2rem] font-[400] md:font-[700]">
+                My Recent Project
               </h3>
             </div>
             <div className="flex justify-center mb-14 items-center">
@@ -119,10 +123,10 @@ const Portfolio = () => {
               </div>
             </div>
 
-            <div className="flex items-center justify-between flex-wrap">
-              <div className="mb-7 sm:mb-0">
-                <h3 className="text-headingColor text-[2rem] font-[700]">
-                  Recent and previous project
+            <div className="flex flex-col items-center justify-between flex-wrap">
+              <div className="flex items-center justify-center mb-7 sm:mb-0">
+                <h3 className="text-headingColor text-center text-[1.7rem] font-bold md:text-[2rem] md:font-[700]">
+                  See All Project
                 </h3>
               </div>
               <div className="flex gap-3">
@@ -151,7 +155,7 @@ const Portfolio = () => {
                   </button>
                 </div>
               </div>
-              <div className="flex items-center gap-4 flex-wrap mt-12">
+              <div className="flex flex-col justify-center items-center gap-4 flex-wrap mt-12">
                 {portfolios?.slice(0, nextItems)?.map((portfolio, index) => (
                   <div
                     key={index}
