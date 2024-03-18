@@ -6,7 +6,13 @@ import About from "@/components/About/About";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="" style={{
+      backgroundImage:
+        "linear-gradient(80deg, #eef7fb 0 60%,  #C9F6FF 0% 100%)",
+      paddingTop: "60px",
+      minHeight: "100vh",
+      overflow: "hidden",
+    }}>
       <HomeCard />
       <Portfolio />
       <About />
