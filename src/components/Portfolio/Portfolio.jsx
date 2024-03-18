@@ -50,10 +50,6 @@ const Portfolio = () => {
       <div
         id="portfolio"
         style={{
-          backgroundImage:
-            "linear-gradient(80deg, #eef7fb 0 60%,  #C9F6FF 0% 100%)",
-          minHeight: "100vh",
-          width: "100%",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
@@ -63,7 +59,7 @@ const Portfolio = () => {
         <div className="container m-auto ">
           <div className="grid grid-flow-col-12">
             <div className="mb-5 flex justify-center w-full">
-              <h3 className="text-headingColor text-center text-[1.5rem] md:text-[2rem] font-[400] md:font-[700]">
+              <h3 className="text-headingColor text-center text-[1.5rem] md:text-[2rem] font-semibold md:font-bold pt-10">
                 My Recent Project
               </h3>
             </div>
@@ -72,7 +68,7 @@ const Portfolio = () => {
                 data-aos="fade-zoom-in"
                 data-aos-delay="20"
                 data-aos-duration="1000"
-                className="flex flex-col md:flex-row rounded-[8px] justify-center items-center bg-white max-w-full sm:w-[48.5%] md:w-[49.8%] lg:w-[62.2%] relative z-[1]"
+                className="flex flex-col lg:flex-row rounded-[8px] justify-center items-center bg-white max-w-full sm:w-[48.5%] md:w-[49.8%] lg:w-[62.2%] relative z-[1]"
                 style={{
                   width: "100%",
                   height: "100%",
@@ -94,10 +90,10 @@ const Portfolio = () => {
                   />
                 </figure>
                 <div className="p-5 flex-1">
-                  <h2 className="text-headerTextColor text-center pb-4">
+                  <h2 className="text-headerTextColor text-center pb-4 text-[14px] md:text-2xl font-semibold">
                     Global Treadings
                   </h2>
-                  <p className="text-smallTextColor">
+                  <p className="text-smallTextColor text-[14px] md:text-xl font-semibold">
                     Global Treadings is a dynamic community connecting writers
                     and readers globally, boasting registered users and an admin
                     dashboard. Admin login details: Email:
@@ -123,35 +119,32 @@ const Portfolio = () => {
             </div>
 
             <div className="flex flex-col items-center justify-between flex-wrap">
-              <div className="flex items-center justify-center mb-7 sm:mb-0">
-                <h3 className="text-headingColor text-center text-[1.7rem] font-bold md:text-[2rem] md:font-[700]">
-                  See All Project
-                </h3>
-              </div>
-              <div className="flex gap-3">
-                <div className="flex ">
-                  <button
-                    onClick={() => setSelectTab("Web Design")}
-                    className="text-smallTextColor border border-solid rounded-3xl border-smallTextColor py-2 px-4 hover:bg-sky-900 hover:text-white hover:border-none"
-                  >
-                    Web Design
-                  </button>
-                </div>
-                <div className="flex">
-                  <button
-                    onClick={() => setSelectTab("all")}
-                    className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-3xl hover:bg-sky-900 hover:text-white hover:border-none"
-                  >
-                    All
-                  </button>
-                </div>
-                <div className="flex">
-                  <button
-                    onClick={() => setSelectTab("Ux")}
-                    className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-3xl hover:bg-sky-900 hover:text-white hover:border-none"
-                  >
-                    UX Design
-                  </button>
+              <div className="flex  md:flex-row items-center justify-between">
+                <div className="flex gap-3">
+                  <div className="flex ">
+                    <button
+                      onClick={() => setSelectTab("Web Design")}
+                      className="text-smallTextColor border border-solid rounded-3xl border-smallTextColor py-2 px-4 hover:bg-sky-900 hover:text-white hover:border-none"
+                    >
+                      Web Design
+                    </button>
+                  </div>
+                  <div className="flex">
+                    <button
+                      onClick={() => setSelectTab("all")}
+                      className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-3xl hover:bg-sky-900 hover:text-white hover:border-none"
+                    >
+                      All
+                    </button>
+                  </div>
+                  <div className="flex">
+                    <button
+                      onClick={() => setSelectTab("Ux")}
+                      className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-3xl hover:bg-sky-900 hover:text-white hover:border-none"
+                    >
+                      UX Design
+                    </button>
+                  </div>
                 </div>
               </div>
               <div className="flex flex-col md:flex-row justify-center items-center gap-4 flex-wrap mt-12">

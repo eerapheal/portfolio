@@ -11,12 +11,7 @@ const Contact = () => {
     <React.Fragment>
       <div
       id="contact"
-        className="flex md:pt-20 items-center justify-center flex-col bg:opacity-95 bg-[#223740]"
-        style={{
-          backgroundImage:
-            "linear-gradient(80deg, #eef7fb 0 60%,  #C9F6FF 0% 100%)",
-          minHeight: "100vh",
-        }}
+        className="flex md:pt-10 items-center justify-center flex-col"
       >
         <div
           className=" flex items-center justify-center bg:opacity-95 bg-[#223740]"
@@ -44,8 +39,8 @@ const Contact = () => {
                   Get In Touch
                 </h2>
               </div>
-              <div className="md:flex justify-between items-stretch">
-                <div className="flex-1 md:max-w-1/2 h-[300px] sm:h-[450px]">
+              <div className=" flex flex-col lg:flex-row justify-between items-stretch">
+                <div className="flex-1 md:max-w-1/2 h-[300px] sm:h-[310px] lg:h-[410px]">
                   <iframe
                     title="google-maps"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.89796851258!2d77.04417103118192!3d28.5275544098874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1687094554975!5m2!1sen!2sin"

@@ -14,19 +14,15 @@ const Contact = () => {
     <React.Fragment>
       <div
         id="about"
-        className="contact"
+        className="about"
         style={{
-          backgroundImage:
-            "linear-gradient(80deg, #eef7fb 0 60%,  #C9F6FF 0% 100%)",
-          paddingTop: "60px",
-          minHeight: "100vh",
           overflow: "hidden",
         }}
       >
-        <div className="container m-auto">
+        <div className="container m-auto pt-10">
           <div className="grid grid-flow-col-12">
             <div className="text-center">
-              <p className="lg:max-w-[600px] p-1 lg:mx-auto text-headingColor font[500] text[16px] loading-7">
+              <p className="lg:max-w-[1000px] p-1 lg:mx-auto text-headingColor font[500] text[16px] md:text-2xl lg:text-2xl loading-7">
                 I&rsquo;m a full-stack software developer who completed software
                 development at Microverse. I&rsquo;ve spent approximately 40
                 hours per week in remote software development in my last few
@@ -53,7 +49,7 @@ const Contact = () => {
                             <h3 className="text-primaryColor font-[600] mb-3 group-hover:text-white group-hover:font-[600] text-lx">
                               Frontend Development
                             </h3>
-                            <p className="text-[14px] text-smallTextColor group-hover:text-white group-hover:font-[500] loading-7">
+                            <p className="text-[14px]  text-smallTextColor group-hover:text-white group-hover:font-[500] loading-7">
                               I specialize in creating user-friendly interfaces,
                               prioritizing technical proficiency for website
                               optimization, and implementing effective content
@@ -181,17 +177,26 @@ const Contact = () => {
                             className="bg-white p-4 rounded shadow  group hover:bg-primaryColor cursor-pointer group-hover:font-[600] text-l ease-in duration-150"
                           >
                             <h3 className="text-primaryColor font-[600] mb-3 group-hover:text-white group-hover:font-[600] text-lx">
-                              UI/UX Design
+                              Framework & Tools/Methods
                             </h3>
                             <p className="text-[14px] text-smallTextColor group-hover:text-white group-hover:font-[500] loading-7">
-                              I&rsquo;m deeply passionate about creating
-                              immersive and user-centric web experiences. With a
-                              strong foundation in UI/UX principles, I leverage
-                              a diverse toolkit of technologies including
-                              Tailwind CSS, SCSS, Bootstrap, and others to bring
-                              designs to life. My focus is on delivering
-                              intuitive and visually compelling interfaces that
-                              engage users and elevate brands.
+                              Jest | RSpec | Mocha | Tailwind CSS | SCSS |
+                              Bootstrap | Material-UI | Cancancan | Devise |
+                              JSON Web Tokens (JWT) | Figma | Git | GitHub |
+                              GitLab | Heroku | Netlify | Render | Versel |
+                              WordPress | Shopify | Hostinger | Namecheap |
+                              Mobile/Responsive Development | Progressive Web
+                              Apps (PWAs) UI/UX Design | Canvas API | Web
+                              Accessibility (A11y) Automated Testing |
+                              Continuous Integration/Continuous Deployment
+                              (CI/CD) Agile Methodology | Scrum | Kanban Remote
+                              Pair-Programming | Video Conferencing Tools (Zoom,
+                              Microsoft Teams, etc.) Teamwork | Communication
+                              Tools (Slack, Microsoft Teams, etc.) Mentorship |
+                              Code Reviews | Knowledge Sharing Sessions Version
+                              Control (Git) | Collaboration Platforms (GitHub,
+                              GitLab) Agile Practices | Sprint Planning |
+                              Retrospectives | Daily Standups
                             </p>
                           </div>
                         </div>
